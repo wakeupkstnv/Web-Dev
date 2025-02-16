@@ -7,17 +7,19 @@ body{
     display: flex;
     height: 100vh;
     justify-content: center;
-    gap:90px;
-    
+    gap:90px;    
 }
+
 .logo img{
     width: 300px;
 }
+
 .logo{
     width: 500px;
     padding-top: 198px;
     padding-left: 23px;
 }
+
 .text{
     font-family:  SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
     font-size: 28px;
@@ -51,6 +53,7 @@ form input{
     margin: 6px 0;
     outline: none;
 }
+
 .button{
     width: 100%;
     background-color: #1877f2;
@@ -66,6 +69,7 @@ form input{
     cursor: pointer;
     margin-top:6px;
 }
+
 form a{
     display: block;
     margin-top: 16px;
@@ -81,6 +85,7 @@ form a{
     border-bottom: 1px solid #dadde1;
     margin: 20px 16px;
 }
+
 .button-green{
     padding-top: 6px;
     background-color: #42b72a;
@@ -103,6 +108,7 @@ form a{
     color:#1c1e21;
     text-align: center;
 }
+
 .sub-form a{
     color:inherit;
     font-weight: 600;
