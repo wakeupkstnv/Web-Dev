@@ -1,0 +1,27 @@
+<div class="card">
+  <a [href]="link" target="_blank">
+      <img [src]="image" class="product-image" />
+  </a>
+  <h3 class="product-title">{{ title }}</h3>
+  <p class="product-price">{{ price }} ₸</p>
+  <p>{{ rating }} of 5</p>
+  
+  <div class="product-rating">
+      <span *ngFor="let star of [1,2,3,4,5]; let i = index">
+          <i class="star" [class.filled]="i < rating"></i>
+      </span>
+  </div>
+
+  <app-button text="Купить" class="buy-button"></app-button>
+  
+  <div class="share-list">
+    <a [href]="link">
+      <app-button text="Check on Kaspi" color="red"></app-button>
+    </a>
+  </div>
+
+  <div class="actions">
+    <app-button text="❤️ {{ likes }}" (click)="likeProduct()" class="like-button"></app-button>
+    <app-button text="Удалить" (click)="removeProduct()" class="remove-button"></app-button>
+  </div>
+</div>

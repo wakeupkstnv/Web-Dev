@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="category-list">
+    <app-button (click)="selectCategory('')" text="Все" style="margin-left: 8px;"></app-button>
+    @for (category of categories; track category.name) {
+      <app-button (click)="selectCategory(category.name)" [text]="category.name" style="margin-left: 8px;"></app-button>
+    }
+  </div>
+  
+<app-product-list [category]="selectedCategory()"></app-product-list>

@@ -1,0 +1,19 @@
+
+      @for (product of filteredProducts; track trackByProduct(0, product)) {
+        <app-card
+          [image]="product.imgURL"
+          [title]="product.name"
+          [price]="product.price"
+          [rating]="product.rating"
+          [link]="product.url"
+          [likes]="product.likes"
+          (liked)="likeProduct(product)"
+          (removed)="removeProduct(product.id)">
+        </app-card>
+      }
+    
+        @if (filteredProducts.length === 0) {
+            <div class="no-products">
+                <p>Товары не найдены</p>
+            </div>
+        }

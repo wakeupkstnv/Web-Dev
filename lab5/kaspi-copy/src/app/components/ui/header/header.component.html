@@ -1,0 +1,24 @@
+<header class="header">
+    <div class="logo">
+      <img src="https://kaspi.kz/img/Logo.svg" alt="Kaspi.kz" />
+    </div>
+  
+    <nav class="nav">
+      <a routerLink="/" routerLinkActive="active">Магазин</a>
+      <a routerLink="/payments" routerLinkActive="active">Платежи</a>
+      <a routerLink="/services" routerLinkActive="active">Сервисы</a>
+    </nav>
+  
+    <div class="search">
+      <input type="text" placeholder="Искать на Kaspi.kz" />
+      <app-button text="🔍" color="-">🔍</app-button>
+    </div>
+  
+    <div class="actions">
+        <app-button text=Войти color="red"></app-button>
+      <app-button [text]="cartItems" color="red">
+        
+      </app-button>
+    </div>
+  </header>
+  
